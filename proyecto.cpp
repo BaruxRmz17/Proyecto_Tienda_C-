@@ -97,7 +97,7 @@ int main() {
                 for(char seguir_CA = 's'; seguir_CA = 'n';){
     
                     int Instrumentos = 0;
-                    cout<<"Que Artista deseas Comprar"<<endl;
+                    cout<<"Que Instrumentos deseas Comprar"<<endl;
                     cin>>Instrumentos;
                     
                     switch (Instrumentos)
@@ -121,7 +121,7 @@ int main() {
                 
                     }
     
-                    cout<<"Deseas Seleccionar Otro Artista? (n = Salir)" <<endl;
+                    cout<<"Deseas Seleccionar Otro Instrumento? (n = Salir)" <<endl;
                     cin>>seguir_CA;
                     if (seguir_CA == 'n'){
                         seguir_CA = 'n';
@@ -134,6 +134,57 @@ int main() {
                 }
     
             }// if Instrumentos 
+
+            if (opcion_C == 3){
+    
+                cout<<"Bienvenido a la seccion de Luz y Sonido";
+                cout<<"¿Que tipo de luz y/o sonido deseas seleccionar?"<<endl;
+                cout<<"Op 1 => Luces Led $5,000"<<endl;
+                cout<<"Op 2 => Pantallas Led $40,000"<<endl;
+                cout<<"Op 3 => Microfono $1000"<<endl;
+                cout<<"Op 4 => Equipo de Sonido $10,000"<<endl;
+                cout<<"Op 5 => Monitores (In Ears) $5,000"<<endl;
+    
+                for(char seguir_CA = 's'; seguir_CA = 'n';){
+    
+                    int Luz = 0;
+                    cout<<"Que Luz y/o sonido deseas Comprar"<<endl;
+                    cin>>Luz;
+                    
+                    switch (Luz)
+                    {
+                        case 1:
+                            carrito += 5000;
+                            break;
+                        case 2:
+                            carrito += 40000;
+                            break;
+                        case 3:
+                            carrito += 1000;
+                            break;
+                        case 4:
+                            carrito += 10000;
+                            break;
+                        case 5:
+                            carrito += 5000;
+                            break;
+    
+                
+                    }
+    
+                    cout<<"Deseas Seleccionar Otro tipo de Luz / Sonido? (n = Salir)" <<endl;
+                    cin>>seguir_CA;
+                    if (seguir_CA == 'n'){
+                        seguir_CA = 'n';
+                        break;
+                    }
+    
+    
+    
+    
+                }
+    
+            }// if Luz y sonido 
             
             
 
