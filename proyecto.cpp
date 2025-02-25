@@ -48,6 +48,7 @@ int main() {
                     int Artista = 0;
                     cout<<"Que Artista deseas Comprar"<<endl;
                     cin>>Artista;
+
                     
                     switch (Artista)
                     {
