@@ -200,7 +200,7 @@ int main() {
             {
                 cout << "Tu total hasta ahora es de = " << carrito << endl;
                 cout << "Presiona Enter para continuar...";
-                cin.ignore();
+                cin.ignore(); // Evita que se borre muy rapido la consola
                 cin.get(); // Espera a que el usuario presione Enter
             }
             
