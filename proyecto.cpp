@@ -41,7 +41,7 @@ int main() {
                 cout<<"Op 2 => Grupo Firme $25,000"<<endl;
                 cout<<"Op 3 => Juntos $20,000"<<endl;
                 cout<<"Op 4 => Julion Alvares $20,000"<<endl;
-                cout<<"Op 5 => Tigres del Norte $10,000"<<endl;
+                cout<<"Op 5 => Tigres del Norte $15,000"<<endl;
     
                 for(char seguir_CA = 's'; seguir_CA = 'n';){
     
@@ -82,7 +82,60 @@ int main() {
     
                 }
     
-            }// if artistas          
+            }// if artistas 
+
+            if (opcion_C == 2){
+    
+                cout<<"Bienvenido a la seccion de Instrumentos";
+                cout<<"¿Que instrumento deseas seleccionar?"<<endl;
+                cout<<"Op 1 => Acordeon Honner $50,000"<<endl;
+                cout<<"Op 2 => Bateria $40,000"<<endl;
+                cout<<"Op 3 => Guitarra $20,000"<<endl;
+                cout<<"Op 4 => Bajo Sexto $10,000"<<endl;
+                cout<<"Op 5 => Saxofon $100,000"<<endl;
+    
+                for(char seguir_CA = 's'; seguir_CA = 'n';){
+    
+                    int Instrumentos = 0;
+                    cout<<"Que Artista deseas Comprar"<<endl;
+                    cin>>Instrumentos;
+                    
+                    switch (Instrumentos)
+                    {
+                        case 1:
+                            carrito += 50000;
+                            break;
+                        case 2:
+                            carrito += 40000;
+                            break;
+                        case 3:
+                            carrito += 20000;
+                            break;
+                        case 4:
+                            carrito += 10000;
+                            break;
+                        case 5:
+                            carrito += 100000;
+                            break;
+    
+                
+                    }
+    
+                    cout<<"Deseas Seleccionar Otro Artista? (n = Salir)" <<endl;
+                    cin>>seguir_CA;
+                    if (seguir_CA == 'n'){
+                        seguir_CA = 'n';
+                        break;
+                    }
+    
+    
+    
+    
+                }
+    
+            }// if Instrumentos 
+            
+            
 
 
             if (opcion_C == 4)
