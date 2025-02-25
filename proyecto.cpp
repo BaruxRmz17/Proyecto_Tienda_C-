@@ -21,6 +21,12 @@ int main() {
 
         while (opcion_C != 5)
         {
+
+            // Limpia la pantalla antes de mostrar el menú
+    
+        system("clear"); // Limpia la pantalla en Linux/macOS
+            
+
             cout<<"Bienvenido a Ramirez Shop"<<endl;
             cout<<"Op 1 => Artistas"<<endl;
             cout<<"Op 2 => Instrumentos"<<endl;
@@ -71,7 +77,7 @@ int main() {
                 
                     }
     
-                    cout<<"Deseas Seleccionar Otro Artista? (n = Salir)" <<endl;
+                    cout<<"Deseas Seleccionar Otro Artista? (s = Si / n = Salir)" <<endl;
                     cin>>seguir_CA;
                     if (seguir_CA == 'n'){
                         seguir_CA = 'n';
@@ -122,7 +128,7 @@ int main() {
                 
                     }
     
-                    cout<<"Deseas Seleccionar Otro Instrumento? (n = Salir)" <<endl;
+                    cout<<"Deseas Seleccionar Otro Instrumento? (s = Si / n = Salir)" <<endl;
                     cin>>seguir_CA;
                     if (seguir_CA == 'n'){
                         seguir_CA = 'n';
@@ -173,7 +179,7 @@ int main() {
                 
                     }
     
-                    cout<<"Deseas Seleccionar Otro tipo de Luz / Sonido? (n = Salir)" <<endl;
+                    cout<<"Deseas Seleccionar Otro tipo de Luz / Sonido? (s = Si /n = Salir)" <<endl;
                     cin>>seguir_CA;
                     if (seguir_CA == 'n'){
                         seguir_CA = 'n';
@@ -192,8 +198,12 @@ int main() {
 
             if (opcion_C == 4)
             {
-                cout<<"Tu total hasta ahora es de = " <<carrito <<endl;
+                cout << "Tu total hasta ahora es de = " << carrito << endl;
+                cout << "Presiona Enter para continuar...";
+                cin.ignore();
+                cin.get(); // Espera a que el usuario presione Enter
             }
+            
 
             if (opcion_C == 5)
             {
@@ -204,7 +214,7 @@ int main() {
                 int ef = 0;
 
                 cout<<"El total de Tu compra es = " <<precio_final <<endl;
-                cout<<"Ingresa tu metodo de pago";
+                cout<<"Ingresa tu metodo de pago"<<endl;
                 cout<<"Tarjeta , Efectivo"<<endl;
                 cin>>mp;
                 cout<<"Tu metodo de pago es "<<mp<<endl;
