@@ -59,6 +59,8 @@ int main() {
                     switch (Artista)
                     {
                         case 1:
+                            cout<<"Felicidades Seleccionaste a Alfredo Olivas"<<endl;
+                            cout<<"Con un costo de $25,000"<<endl;
                             carrito += 25000;
                             break;
                         case 2:
@@ -199,7 +201,7 @@ int main() {
             if (opcion_C == 4)
             {
                 cout << "Tu total hasta ahora es de = " << carrito << endl;
-                cout << "Presiona Enter para continuar...";
+                cout << "Presiona Enter para salir del carrito...";
                 cin.ignore(); // Evita que se borre muy rapido la consola
                 cin.get(); // Espera a que el usuario presione Enter
             }
