@@ -9,6 +9,9 @@ int main() {
     int Producto = 0;
     int carrito = 0;
 
+    // carrito = 25000
+    //carrito = 25000 + 15000
+
 
     cout<<"Deseas Comprar Productos? (S = Si / N = No)"<<endl;
     cin>>FinalizarC;
