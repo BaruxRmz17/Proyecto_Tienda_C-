@@ -258,7 +258,7 @@ int main() {
                     tarjeta = precio_final ;
                     cambio = precio_final - precio_final;
                     cout<<"Compra realizada con exito"<<endl;
-                    cout<<"Tu cambio es de"<<cambio<<endl;
+                    cout<<"Tu cambio es de " <<cambio<<endl;
 
 
                 }
