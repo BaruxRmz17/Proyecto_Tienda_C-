@@ -2,6 +2,65 @@
 
 using namespace std;
 
+
+
+void menuG(){
+
+    cout<<"Bienvenido a Ramirez Shop"<<endl;
+    cout<<"Op 1 => Artistas"<<endl;
+    cout<<"Op 2 => Instrumentos"<<endl;
+    cout<<"Op 3 => Monitores de Sonido"<<endl;
+    cout<<"Op 4 => Ver Carrito"<<endl;
+    cout<<"Op 5 => Salir de la tienda y ver costo a pagar"<<endl;
+
+
+}
+
+
+void menuA(){
+    cout<<"Bienvenido a la seccion de Artistas";
+    cout<<"¿Que artista deseas seleccionar?"<<endl;
+    cout<<"Op 1 => Alfredo Olivas $25,000"<<endl;
+    cout<<"Op 2 => Grupo Firme $25,000"<<endl;
+    cout<<"Op 3 => Juntos $20,000"<<endl;
+    cout<<"Op 4 => Julion Alvares $20,000"<<endl;
+    cout<<"Op 5 => Tigres del Norte $15,000"<<endl;
+
+}
+
+
+void menuI(){
+
+    cout<<"Bienvenido a la seccion de Instrumentos";
+    cout<<"¿Que instrumento deseas seleccionar?"<<endl;
+    cout<<"Op 1 => Acordeon Honner $50,000"<<endl;
+    cout<<"Op 2 => Bateria $40,000"<<endl;
+    cout<<"Op 3 => Guitarra $20,000"<<endl;
+    cout<<"Op 4 => Bajo Sexto $10,000"<<endl;
+    cout<<"Op 5 => Saxofon $100,000"<<endl;
+
+}
+
+
+void menuM(){
+    cout<<"Bienvenido a la seccion de Luz y Sonido";
+    cout<<"¿Que tipo de luz y/o sonido deseas seleccionar?"<<endl;
+    cout<<"Op 1 => Luces Led $5,000"<<endl;
+    cout<<"Op 2 => Pantallas Led $40,000"<<endl;
+    cout<<"Op 3 => Microfono $1000"<<endl;
+    cout<<"Op 4 => Equipo de Sonido $10,000"<<endl;
+    cout<<"Op 5 => Monitores (In Ears) $5,000"<<endl;
+}
+
+
+struct PrecioFinal{
+    int Precio_F;
+    int tarjeta;
+    int efectivo;
+};
+
+
+
 int main() {
     int precio_final = 0;
     char FinalizarC;
@@ -25,32 +84,23 @@ int main() {
         while (opcion_C != 5)
         {
 
-            // Limpia la pantalla antes de mostrar el menú
+            menuG();
     
-        system("clear"); // Limpia la pantalla en Linux/macOS
+            // system("clear");  Limpia la pantalla 
+        
             
 
-            cout<<"Bienvenido a Ramirez Shop"<<endl;
-            cout<<"Op 1 => Artistas"<<endl;
-            cout<<"Op 2 => Instrumentos"<<endl;
-            cout<<"Op 3 => Monitores de Sonido"<<endl;
-            cout<<"Op 4 => Ver Carrito"<<endl;
-            cout<<"Op 5 => Salir de la tienda y ver costo a pagar"<<endl;
-    
+
     
             cout<<"¿Que opcion deseas seleccionar ? "<<endl;
             cin>>opcion_C;
         
     
             if (opcion_C == 1){
+
+                menuA();
     
-                cout<<"Bienvenido a la seccion de Artistas";
-                cout<<"¿Que artista deseas seleccionar?"<<endl;
-                cout<<"Op 1 => Alfredo Olivas $25,000"<<endl;
-                cout<<"Op 2 => Grupo Firme $25,000"<<endl;
-                cout<<"Op 3 => Juntos $20,000"<<endl;
-                cout<<"Op 4 => Julion Alvares $20,000"<<endl;
-                cout<<"Op 5 => Tigres del Norte $15,000"<<endl;
+            
     
                 for(char seguir_CA = 's'; seguir_CA = 'n';){
     
@@ -98,13 +148,7 @@ int main() {
 
             if (opcion_C == 2){
     
-                cout<<"Bienvenido a la seccion de Instrumentos";
-                cout<<"¿Que instrumento deseas seleccionar?"<<endl;
-                cout<<"Op 1 => Acordeon Honner $50,000"<<endl;
-                cout<<"Op 2 => Bateria $40,000"<<endl;
-                cout<<"Op 3 => Guitarra $20,000"<<endl;
-                cout<<"Op 4 => Bajo Sexto $10,000"<<endl;
-                cout<<"Op 5 => Saxofon $100,000"<<endl;
+                menuI();
     
                 for(char seguir_CA = 's'; seguir_CA = 'n';){
     
@@ -149,13 +193,7 @@ int main() {
 
             if (opcion_C == 3){
     
-                cout<<"Bienvenido a la seccion de Luz y Sonido";
-                cout<<"¿Que tipo de luz y/o sonido deseas seleccionar?"<<endl;
-                cout<<"Op 1 => Luces Led $5,000"<<endl;
-                cout<<"Op 2 => Pantallas Led $40,000"<<endl;
-                cout<<"Op 3 => Microfono $1000"<<endl;
-                cout<<"Op 4 => Equipo de Sonido $10,000"<<endl;
-                cout<<"Op 5 => Monitores (In Ears) $5,000"<<endl;
+                menuM();
     
                 for(char seguir_CA = 's'; seguir_CA = 'n';){
     
@@ -197,9 +235,9 @@ int main() {
                 }
     
             }// if Luz y sonido 
-            
-            
+    
 
+        
 
             if (opcion_C == 4)
             {
@@ -229,7 +267,7 @@ int main() {
                     tarjeta = precio_final ;
                     cambio = precio_final - precio_final;
                     cout<<"Compra realizada con exito"<<endl;
-                    cout<<"Tu cambio es de"<<cambio<<endl;
+                    cout<<"Tu cambio es de " <<cambio<<endl;
 
 
                 }
